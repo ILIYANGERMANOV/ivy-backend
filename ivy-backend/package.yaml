@@ -1,0 +1,83 @@
+name:                ivy-backend
+version:             0.1.0.0
+github:              "ILIYANGERMANOV/ivy-backend"
+license:             GPL3
+author:              "Iliyan Germanov"
+maintainer:          "iliyan.germanov971@gmail.com"
+copyright:           "2022 Iliyan Germanov"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/ivy-backend#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- aeson
+- servant 
+- servant-server
+- servant-auth
+- servant-auth-server
+- polysemy
+- polysemy-plugin
+- rel8
+- hasql
+- hasql-transaction
+- password
+- uuid
+- text
+- email-validate
+- cryptonite
+- triplesec
+- bytestring
+- base64-bytestring
+- wai
+- warp
+- mtl
+- optparse-generic
+- containers
+- errors
+- hex-text
+
+library:
+  source-dirs: src
+
+executables:
+  ivy-backend-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ivy-backend
+
+tests:
+  ivy-backend-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - ivy-backend
+    - hspec
+    - tasty
+    - hspec-wai
+    - servant-quickcheck
+    - lens
+    - base-compat
+    - unordered-containers
+    - http-client
+    - http-types
+    - servant-client

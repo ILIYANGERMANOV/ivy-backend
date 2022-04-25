@@ -1,0 +1,145 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           ivy-backend
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/ivy-backend#readme>
+homepage:       https://github.com/ILIYANGERMANOV/ivy-backend#readme
+bug-reports:    https://github.com/ILIYANGERMANOV/ivy-backend/issues
+author:         Iliyan Germanov
+maintainer:     iliyan.germanov971@gmail.com
+copyright:      2022 Iliyan Germanov
+license:        GPL3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/ILIYANGERMANOV/ivy-backend
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_ivy_backend
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , base64-bytestring
+    , bytestring
+    , containers
+    , cryptonite
+    , email-validate
+    , errors
+    , hasql
+    , hasql-transaction
+    , hex-text
+    , mtl
+    , optparse-generic
+    , password
+    , polysemy
+    , polysemy-plugin
+    , rel8
+    , servant
+    , servant-auth
+    , servant-auth-server
+    , servant-server
+    , text
+    , triplesec
+    , uuid
+    , wai
+    , warp
+  default-language: Haskell2010
+
+executable ivy-backend-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_ivy_backend
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , base64-bytestring
+    , bytestring
+    , containers
+    , cryptonite
+    , email-validate
+    , errors
+    , hasql
+    , hasql-transaction
+    , hex-text
+    , ivy-backend
+    , mtl
+    , optparse-generic
+    , password
+    , polysemy
+    , polysemy-plugin
+    , rel8
+    , servant
+    , servant-auth
+    , servant-auth-server
+    , servant-server
+    , text
+    , triplesec
+    , uuid
+    , wai
+    , warp
+  default-language: Haskell2010
+
+test-suite ivy-backend-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_ivy_backend
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , base-compat
+    , base64-bytestring
+    , bytestring
+    , containers
+    , cryptonite
+    , email-validate
+    , errors
+    , hasql
+    , hasql-transaction
+    , hex-text
+    , hspec
+    , hspec-wai
+    , http-client
+    , http-types
+    , ivy-backend
+    , lens
+    , mtl
+    , optparse-generic
+    , password
+    , polysemy
+    , polysemy-plugin
+    , rel8
+    , servant
+    , servant-auth
+    , servant-auth-server
+    , servant-client
+    , servant-quickcheck
+    , servant-server
+    , tasty
+    , text
+    , triplesec
+    , unordered-containers
+    , uuid
+    , wai
+    , warp
+  default-language: Haskell2010
