@@ -17,3 +17,11 @@ The goal of this project is to re-write Ivy Wallet's `closed-source` Kotlin Spri
 ### _WIP..._ :construction:
 
 ## [Ivy Wallet's Official repo](https://github.com/ILIYANGERMANOV/ivy-wallet)
+
+## Community
+
+Be the change! Join our [Telegram community](https://t.me/+ETavgioAvWg4NThk), comment on GitHub, and tell us how we can create a better environment for developers & creators to work together.
+
+### [Ivy Telegram Community](https://t.me/+ETavgioAvWg4NThk)
+
+### [Ivy Telegram News](https://t.me/ivywallet)
