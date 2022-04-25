@@ -46,6 +46,7 @@ dependencies:
 - containers
 - errors
 - hex-text
+- generic-lens
 
 library:
   source-dirs: src
@@ -75,7 +76,6 @@ tests:
     - tasty
     - hspec-wai
     - servant-quickcheck
-    - lens
     - base-compat
     - unordered-containers
     - http-client

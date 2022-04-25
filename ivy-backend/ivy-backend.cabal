@@ -25,7 +25,9 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Server
+      ServerApp
+      Util.StringUtils
   other-modules:
       Paths_ivy_backend
   hs-source-dirs:
@@ -39,6 +41,7 @@ library
     , cryptonite
     , email-validate
     , errors
+    , generic-lens
     , hasql
     , hasql-transaction
     , hex-text
@@ -75,6 +78,7 @@ executable ivy-backend-exe
     , cryptonite
     , email-validate
     , errors
+    , generic-lens
     , hasql
     , hasql-transaction
     , hex-text
@@ -114,6 +118,7 @@ test-suite ivy-backend-test
     , cryptonite
     , email-validate
     , errors
+    , generic-lens
     , hasql
     , hasql-transaction
     , hex-text
@@ -122,7 +127,6 @@ test-suite ivy-backend-test
     , http-client
     , http-types
     , ivy-backend
-    , lens
     , mtl
     , optparse-generic
     , password
