@@ -26,7 +26,10 @@ source-repository head
 library
   exposed-modules:
       Database.DbCore
+      Database.DbCRUD
+      Database.Entity.UserEntity
       Database.SQLUtils
+      Domain.Data.User.AuthProviderType
       Server
       ServerApp
       Util.StringUtils
