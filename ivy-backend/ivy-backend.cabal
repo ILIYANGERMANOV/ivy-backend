@@ -25,6 +25,8 @@ source-repository head
 
 library
   exposed-modules:
+      Database.DbCore
+      Database.SQLUtils
       Server
       ServerApp
       Util.StringUtils
